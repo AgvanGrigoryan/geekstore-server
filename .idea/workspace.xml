@@ -4,9 +4,7 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e63b2bcd-7742-44e8-96cb-26b7efc3b946" name="Changes" comment="add users controlers(login,registration)">
-      <change beforePath="$PROJECT_DIR$/products/templates/products/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/base.html" afterDir="false" />
-    </list>
+    <list default="true" id="e63b2bcd-7742-44e8-96cb-26b7efc3b946" name="Changes" comment="update urls in templates" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +100,7 @@
       <workItem from="1668518355358" duration="26639000" />
       <workItem from="1668768646805" duration="12403000" />
       <workItem from="1668789454504" duration="1899000" />
-      <workItem from="1668853018108" duration="5863000" />
+      <workItem from="1668853018108" duration="6178000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668775419451</created>
@@ -181,7 +179,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668859556270</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="update urls in templates">
+      <created>1668859874189</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1668859874189</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -243,6 +248,7 @@
     <MESSAGE value="create users template" />
     <MESSAGE value="create users url" />
     <MESSAGE value="add users controlers(login,registration)" />
-    <option name="LAST_COMMIT_MESSAGE" value="add users controlers(login,registration)" />
+    <MESSAGE value="update urls in templates" />
+    <option name="LAST_COMMIT_MESSAGE" value="update urls in templates" />
   </component>
 </project>
