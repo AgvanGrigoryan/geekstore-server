@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
                 ('description', models.TextField(blank=True)),
                 ('price', models.DecimalField(decimal_places=2, max_digits=8)),
                 ('quantity', models.PositiveIntegerField(default=0)),
-                ('category', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='products.productcategory')),
+                ('category', models.ForeignKey(on_delete=django.db.models.deletion.PROTECT, to='users.productcategory')),
             ],
         ),
     ]
