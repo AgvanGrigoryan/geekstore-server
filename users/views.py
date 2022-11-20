@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
-from users.forms import UserLoginForm
-from users.logic import authenticate, login_page_context, register_page_context
+from users.forms import UserLoginForm, UserRegistrationForm
+from users.logic import authenticate, login_page_context, register_page_context, save_new_user_in_db
 
 
 def login(request):
@@ -15,5 +15,10 @@ def login(request):
 
 
 def register(request):
-    context = register_page_context()
+    if request.method == 'POST':
+        form = UserRegistrationForm(data=request.POST)
+        save_new_user_in_db(form)
+    else:
+        form = UserRegistrationForm()
+    context = register_page_context(form)
     return render(request, 'users/register.html', context)
