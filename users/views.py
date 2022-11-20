@@ -1,9 +1,7 @@
-
 from django.shortcuts import render
 
-
 from users.forms import UserLoginForm
-from users.logic import authenticate, login_page_context
+from users.logic import authenticate, login_page_context, register_page_context
 
 
 def login(request):
@@ -17,4 +15,5 @@ def login(request):
 
 
 def register(request):
-    return render(request, 'users/register.html')
+    context = register_page_context()
+    return render(request, 'users/register.html', context)

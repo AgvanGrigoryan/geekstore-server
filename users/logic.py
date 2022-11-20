@@ -2,6 +2,8 @@ from django.contrib import auth
 from django.shortcuts import HttpResponseRedirect
 from django.urls import reverse
 
+from users.forms import UserRegistrationForm
+
 
 def authenticate(request, form):
     """
@@ -18,7 +20,7 @@ def authenticate(request, form):
         authorizate(user, request)
 
 
-def authorizate(user,request):
+def authorizate(user, request):
     """
     Login User if him is active and correct
     args: user, request
@@ -30,7 +32,22 @@ def authorizate(user,request):
 
 
 def login_page_context(form):
+    """
+    return login page context
+    return valut type
+    """
     context = {
         'form': form
     }
     return context
+
+
+def register_page_context():
+    context = {
+        'form': get_register_form()
+    }
+    return context
+
+
+def get_register_form():
+    return UserRegistrationForm
