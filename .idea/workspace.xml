@@ -7,7 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e63b2bcd-7742-44e8-96cb-26b7efc3b946" name="Changes" comment="add form, update user template" />
+    <list default="true" id="e63b2bcd-7742-44e8-96cb-26b7efc3b946" name="Changes" comment="refactoring controlers(move the logic to the separate file)">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/login.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -104,7 +108,7 @@
       <workItem from="1668768646805" duration="12403000" />
       <workItem from="1668789454504" duration="1899000" />
       <workItem from="1668853018108" duration="10542000" />
-      <workItem from="1668962192570" duration="968000" />
+      <workItem from="1668962192570" duration="6374000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668775419451</created>
@@ -204,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668962929567</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="refactoring controlers(move the logic to the separate file)">
+      <created>1668967048758</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1668967048758</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -269,6 +280,7 @@
     <MESSAGE value="update urls in templates" />
     <MESSAGE value="update login url in template" />
     <MESSAGE value="add form, update user template" />
-    <option name="LAST_COMMIT_MESSAGE" value="add form, update user template" />
+    <MESSAGE value="refactoring controlers(move the logic to the separate file)" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactoring controlers(move the logic to the separate file)" />
   </component>
 </project>
