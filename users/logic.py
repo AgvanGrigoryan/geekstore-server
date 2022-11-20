@@ -2,8 +2,6 @@ from django.contrib import auth
 from django.shortcuts import HttpResponseRedirect
 from django.urls import reverse
 
-from users.forms import UserRegistrationForm
-
 
 def authenticate(request, form):
     """
@@ -42,12 +40,22 @@ def login_page_context(form):
     return context
 
 
-def register_page_context():
+def register_page_context(form):
     context = {
-        'form': get_register_form()
+        'form': form
     }
     return context
 
 
-def get_register_form():
-    return UserRegistrationForm
+def save_new_user_in_db(form):
+    """
+        Validate the form and if it correctly filled then Save User in Database
+        return: HttpResponseRedirect(reverse('index'))
+    """
+    if form.is_valid():
+        form.save()
+        return HttpResponseRedirect(reverse('users:login'))
+
+
+# def get_register_form():
+#     return UserRegistrationForm
