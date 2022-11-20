@@ -1,27 +1,18 @@
-from django.contrib import auth
-from django.shortcuts import render, HttpResponseRedirect
-from django.urls import reverse
+
+from django.shortcuts import render
+
 
 from users.forms import UserLoginForm
+from users.logic import authenticate, login_page_context
 
 
 def login(request):
     if request.method == 'POST':
         form = UserLoginForm(data=request.POST)
-        # authenticate
-        if form.is_valid():
-            username = request.POST['username']
-            password = request.POST['password']
-            user = auth.authenticate(username=username, password=password)
-            # authorization
-            if user and user.is_active:
-                auth.login(request, user)
-                return HttpResponseRedirect(reverse('index'))
+        authenticate(request, form)
     else:
         form = UserLoginForm()
-    context = {
-        'form': form
-    }
+    context = login_page_context(form)
     return render(request, 'users/login.html', context)
 
 

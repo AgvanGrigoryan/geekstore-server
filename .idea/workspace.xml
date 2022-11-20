@@ -7,14 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e63b2bcd-7742-44e8-96cb-26b7efc3b946" name="Changes" comment="update login url in template">
-      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="e63b2bcd-7742-44e8-96cb-26b7efc3b946" name="Changes" comment="add form, update user template" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +104,7 @@
       <workItem from="1668768646805" duration="12403000" />
       <workItem from="1668789454504" duration="1899000" />
       <workItem from="1668853018108" duration="10542000" />
-      <workItem from="1668962192570" duration="523000" />
+      <workItem from="1668962192570" duration="968000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668775419451</created>
@@ -204,7 +197,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668860119098</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="add form, update user template">
+      <created>1668962929567</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1668962929567</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -268,6 +268,7 @@
     <MESSAGE value="add users controlers(login,registration)" />
     <MESSAGE value="update urls in templates" />
     <MESSAGE value="update login url in template" />
-    <option name="LAST_COMMIT_MESSAGE" value="update login url in template" />
+    <MESSAGE value="add form, update user template" />
+    <option name="LAST_COMMIT_MESSAGE" value="add form, update user template" />
   </component>
 </project>
