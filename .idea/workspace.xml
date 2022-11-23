@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e63b2bcd-7742-44e8-96cb-26b7efc3b946" name="Changes" comment="update register form,controlers and template">
+    <list default="true" id="e63b2bcd-7742-44e8-96cb-26b7efc3b946" name="Changes" comment="add csrf token in form,&#10;add action and method attributes in form">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/logic.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
@@ -108,7 +108,8 @@
       <workItem from="1668768646805" duration="12403000" />
       <workItem from="1668789454504" duration="1899000" />
       <workItem from="1668853018108" duration="10542000" />
-      <workItem from="1668962192570" duration="14484000" />
+      <workItem from="1668962192570" duration="17536000" />
+      <workItem from="1669142176229" duration="7524000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668775419451</created>
@@ -229,7 +230,28 @@
       <option name="project" value="LOCAL" />
       <updated>1668980407898</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="move logic of register to separate logic file">
+      <created>1668981400413</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1668981400413</updated>
+    </task>
+    <task id="LOCAL-00019" summary="move logic of register to separate logic file">
+      <created>1668981474966</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1668981474966</updated>
+    </task>
+    <task id="LOCAL-00020" summary="add csrf token in form,&#10;add action and method attributes in form">
+      <created>1668981546330</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1668981546330</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +319,8 @@
     <MESSAGE value="refactoring controlers(move the logic to the separate file)" />
     <MESSAGE value="oun templates and customization forms" />
     <MESSAGE value="update register form,controlers and template" />
-    <option name="LAST_COMMIT_MESSAGE" value="update register form,controlers and template" />
+    <MESSAGE value="move logic of register to separate logic file" />
+    <MESSAGE value="add csrf token in form,&#10;add action and method attributes in form" />
+    <option name="LAST_COMMIT_MESSAGE" value="add csrf token in form,&#10;add action and method attributes in form" />
   </component>
 </project>
