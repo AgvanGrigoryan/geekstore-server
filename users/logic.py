@@ -55,5 +55,12 @@ def save_new_user_in_db(form):
     # else:
     #     print(form.errors)
 
-# def get_register_form():
-#     return UserRegistrationForm
+def edit_user_data_in_db(form):
+    form.save()
+    return HttpResponseRedirect(reverse('users:profile'))
+
+def profile_page_context(form):
+    context = {
+        'form': form,
+    }
+    return context
