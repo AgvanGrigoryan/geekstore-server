@@ -45,10 +45,10 @@ def register_page_context(form):
     return context
 
 
-def save_new_user_in_db(request,form):
+def save_new_user_in_db(request, form):
     """
-        Validate the form and if it correctly filled then Save User in Database
-        return: HttpResponseRedirect(reverse('index'))
+        if form correctly filled then Create new User in Database
+        return: HttpResponseRedirect(reverse('users:login'))
     """
     form.save()
     messages.success(request, "Вы успешно зарегистрировались")
@@ -58,6 +58,10 @@ def save_new_user_in_db(request,form):
 
 
 def edit_user_data_in_db(form):
+    """
+        if form correctly filled then edit User datas in Database
+        return: HttpResponseRedirect(reverse('users:login'))
+     """
     form.save()
     return HttpResponseRedirect(reverse('users:profile'))
 
@@ -67,3 +71,13 @@ def profile_page_context(form):
         'form': form,
     }
     return context
+
+
+def logout_user(request):
+    """
+    Logout User on web-site
+    args: request
+    return: HttpResponseRedirect(reverse('index'))
+    """
+    auth.logout(request)
+    return HttpResponseRedirect(reverse('index'))
