@@ -22,7 +22,7 @@ def register(request):
     if request.method == 'POST':
         form = UserRegistrationForm(data=request.POST)
         if form.is_valid():
-            return save_new_user_in_db(form)
+            return save_new_user_in_db(request, form)
         else:
             print(form.errors)
     else:

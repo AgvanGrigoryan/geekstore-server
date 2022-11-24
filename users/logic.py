@@ -1,4 +1,4 @@
-from django.contrib import auth
+from django.contrib import auth, messages
 from django.shortcuts import HttpResponseRedirect
 from django.urls import reverse
 
@@ -45,19 +45,22 @@ def register_page_context(form):
     return context
 
 
-def save_new_user_in_db(form):
+def save_new_user_in_db(request,form):
     """
         Validate the form and if it correctly filled then Save User in Database
         return: HttpResponseRedirect(reverse('index'))
     """
     form.save()
+    messages.success(request, "Вы успешно зарегистрировались")
     return HttpResponseRedirect(reverse('users:login'))
     # else:
     #     print(form.errors)
 
+
 def edit_user_data_in_db(form):
     form.save()
     return HttpResponseRedirect(reverse('users:profile'))
+
 
 def profile_page_context(form):
     context = {
