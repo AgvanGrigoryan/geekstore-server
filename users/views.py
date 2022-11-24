@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 from users.forms import UserLoginForm, UserRegistrationForm, UserProfileForm
 from users.logic import authenticate, login_page_context, register_page_context, save_new_user_in_db, authorizate, \
-    profile_page_context, edit_user_data_in_db
+    profile_page_context, edit_user_data_in_db, logout_user
 
 
 def login(request):
@@ -40,3 +40,7 @@ def profile(request):
         form = UserProfileForm(instance=request.user)
     context = profile_page_context(form)
     return render(request, 'users/profile.html', context)
+
+
+def logout(request):
+    return logout_user(request)
