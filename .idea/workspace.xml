@@ -7,13 +7,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e63b2bcd-7742-44e8-96cb-26b7efc3b946" name="Changes" comment="add profile template and edit base template">
+    <list default="true" id="e63b2bcd-7742-44e8-96cb-26b7efc3b946" name="Changes" comment="show message on login page after success registration">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/products/templates/products/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/store/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/store/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/users/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/logic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/register.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +114,7 @@
       <workItem from="1668962192570" duration="17536000" />
       <workItem from="1669142176229" duration="10942000" />
       <workItem from="1669216019257" duration="817000" />
-      <workItem from="1669296067290" duration="3269000" />
+      <workItem from="1669296067290" duration="8660000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668775419451</created>
@@ -292,7 +291,28 @@
       <option name="project" value="LOCAL" />
       <updated>1669296457043</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary=" create login and register form errors handler">
+      <created>1669299825462</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1669299825462</updated>
+    </task>
+    <task id="LOCAL-00027" summary="change language code">
+      <created>1669299971624</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1669299971624</updated>
+    </task>
+    <task id="LOCAL-00028" summary="show message on login page after success registration">
+      <created>1669300124639</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1669300124639</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,6 +387,9 @@
     <MESSAGE value="add profile controler and url path" />
     <MESSAGE value="profile controler logic" />
     <MESSAGE value="add profile template and edit base template" />
-    <option name="LAST_COMMIT_MESSAGE" value="add profile template and edit base template" />
+    <MESSAGE value=" create login and register form errors handler" />
+    <MESSAGE value="change language code" />
+    <MESSAGE value="show message on login page after success registration" />
+    <option name="LAST_COMMIT_MESSAGE" value="show message on login page after success registration" />
   </component>
 </project>
