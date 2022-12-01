@@ -20,7 +20,7 @@ def products(request, category_id=None, page=1):
 @login_required
 def basket_add(request, product_id=None):
     current_page = request.META.get('HTTP_REFERER')
-    create_basket_or_plus(request, product_id, current_page)
+    return create_basket_or_plus(request, product_id, current_page)
 
 
 @login_required
