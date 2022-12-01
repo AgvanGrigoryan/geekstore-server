@@ -17,6 +17,10 @@ def products_page_context(category_id):
         'title': 'Store - Catalog',
         'categories': get_all_categories(),
     }
+    if category_id:
+        context.update({'products': Product.objects.filter(category_id=category_id)})
+    else:
+        context.update({'products': get_all_products()})
     return context
 
 
