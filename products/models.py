@@ -35,3 +35,10 @@ class Basket(models.Model):
 
     def __str__(self):
         return f'Корзина для {self.user.username} | Продукт {self.product.name}'
+
+    def sum(self):
+        """
+        Count product price sum
+        return: Decimal number
+        """
+        return self.quantity * self.product.price

@@ -2,6 +2,8 @@ from django.contrib import auth, messages
 from django.shortcuts import HttpResponseRedirect
 from django.urls import reverse
 
+from products.models import Basket
+
 
 def authenticate(request):
     """
@@ -33,6 +35,7 @@ def login_page_context(form):
     return value type
     """
     context = {
+        'title': 'Store - Войти',
         'form': form
     }
     return context
@@ -40,6 +43,7 @@ def login_page_context(form):
 
 def register_page_context(form):
     context = {
+        'title': 'Store - Регистрация',
         'form': form
     }
     return context
@@ -66,9 +70,16 @@ def edit_user_data_in_db(form):
     return HttpResponseRedirect(reverse('users:profile'))
 
 
-def profile_page_context(form):
+def profile_page_context(form, user):
+    baskets = Basket.objects.filter(user=user)
+    total_quantity = sum(basket.quantity for basket in baskets)
+    total_sum = sum(basket.sum() for basket in baskets)
     context = {
+        'title': 'Store - Личный кабинет',
         'form': form,
+        'baskets': baskets,
+        'total_quantity': total_quantity,
+        'total_sum': total_sum,
     }
     return context
 
