@@ -1,6 +1,10 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
 
-from products.logic import products_page_context, index_page_context
+from products.logic import products_page_context, index_page_context, create_basket_or_plus
+from products.models import Basket
+
+from django.contrib.auth.decorators import login_required
 
 
 def index(request):
@@ -8,8 +12,8 @@ def index(request):
     return render(request, 'products/index.html', context)
 
 
-def products(request):
-    context = products_page_context()
+def products(request, category_id=None, page=1):
+    context = products_page_context(category_id, page)
     return render(request, 'products/products.html', context)
 
 

@@ -12,16 +12,23 @@ def index_page_context():
     return context
 
 
-def products_page_context(category_id):
+def products_page_context(category_id, page):
     context = {
         'title': 'Store - Catalog',
         'categories': get_all_categories(),
     }
     if category_id:
-        context.update({'products': Product.objects.filter(category_id=category_id)})
+        products = Product.objects.filter(category_id=category_id)
     else:
-        context.update({'products': get_all_products()})
+        products = get_all_products()
+    products_paginator = create_products_paginator(products, page)
+    context.update({'products': products_paginator})
     return context
+
+
+def create_products_paginator(products, page):
+    paginator = Paginator(products, 3)
+    return paginator.page(page)
 
 
 def get_all_categories():
