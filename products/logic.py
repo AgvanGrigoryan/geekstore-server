@@ -22,6 +22,7 @@ def products_page_context(category_id, page):
     else:
         products = get_all_products()
     products_paginator = create_products_paginator(products, page)
+    print(type(products_paginator.number))
     context.update({'products': products_paginator})
     return context
 
