@@ -1,1 +1,5 @@
 db.sqlite3
+products/migrations
+users/migrations
+*/migrations
+
