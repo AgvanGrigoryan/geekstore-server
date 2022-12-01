@@ -7,11 +7,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e63b2bcd-7742-44e8-96cb-26b7efc3b946" name="Changes" comment="change menu bar items at the user login or logout">
-      <change afterPath="$PROJECT_DIR$/products/templates/products/basket.html" afterDir="false" />
+    <list default="true" id="e63b2bcd-7742-44e8-96cb-26b7efc3b946" name="Changes" comment="add pagination for products">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/products/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/templates/users/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/users/profile.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/logic.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/logic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/0002_alter_productcategory_options.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/templates/products/products.html" beforeDir="false" afterPath="$PROJECT_DIR$/products/templates/products/products.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/products/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/products/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/__init__.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +120,13 @@
       <workItem from="1669142176229" duration="10942000" />
       <workItem from="1669216019257" duration="817000" />
       <workItem from="1669296067290" duration="11646000" />
-      <workItem from="1669455275422" duration="2963000" />
+      <workItem from="1669455275422" duration="10273000" />
+      <workItem from="1669580026967" duration="1523000" />
+      <workItem from="1669618495102" duration="6051000" />
+      <workItem from="1669648865593" duration="6129000" />
+      <workItem from="1669734561460" duration="9788000" />
+      <workItem from="1669817556095" duration="3453000" />
+      <workItem from="1669897028805" duration="11166000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1668775419451</created>
@@ -333,7 +345,70 @@
       <option name="project" value="LOCAL" />
       <updated>1669312391710</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="move basket html and create model">
+      <created>1669461019455</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1669461019455</updated>
+    </task>
+    <task id="LOCAL-00033" summary="update gitignore">
+      <created>1669897580359</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1669897580359</updated>
+    </task>
+    <task id="LOCAL-00034" summary="update basket template, add total sum,total quantity counters">
+      <created>1669898020301</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1669898020301</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add basket create,controler">
+      <created>1669898719596</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1669898719596</updated>
+    </task>
+    <task id="LOCAL-00036" summary="add total sum and quantity counters in basket">
+      <created>1669899368203</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1669899368203</updated>
+    </task>
+    <task id="LOCAL-00037" summary="only logined users acces to basket">
+      <created>1669899446078</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1669899446078</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add login url in settings">
+      <created>1669899870377</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1669899870377</updated>
+    </task>
+    <task id="LOCAL-00039" summary="show products as category">
+      <created>1669899925406</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1669899925406</updated>
+    </task>
+    <task id="LOCAL-00040" summary="add pagination for products">
+      <created>1669902341836</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1669902341836</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -387,15 +462,6 @@
       <path value="$PROJECT_DIR$/.." />
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
-    <MESSAGE value="create users app" />
-    <MESSAGE value="create model User &amp; update Django User model" />
-    <MESSAGE value="user model in admin" />
-    <MESSAGE value="create users template" />
-    <MESSAGE value="create users url" />
-    <MESSAGE value="add users controlers(login,registration)" />
-    <MESSAGE value="update urls in templates" />
-    <MESSAGE value="update login url in template" />
-    <MESSAGE value="add form, update user template" />
     <MESSAGE value="refactoring controlers(move the logic to the separate file)" />
     <MESSAGE value="oun templates and customization forms" />
     <MESSAGE value="update register form,controlers and template" />
@@ -412,6 +478,15 @@
     <MESSAGE value="update user save function description" />
     <MESSAGE value="add logout controler,url" />
     <MESSAGE value="change menu bar items at the user login or logout" />
-    <option name="LAST_COMMIT_MESSAGE" value="change menu bar items at the user login or logout" />
+    <MESSAGE value="move basket html and create model" />
+    <MESSAGE value="update gitignore" />
+    <MESSAGE value="update basket template, add total sum,total quantity counters" />
+    <MESSAGE value="add basket create,controler" />
+    <MESSAGE value="add total sum and quantity counters in basket" />
+    <MESSAGE value="only logined users acces to basket" />
+    <MESSAGE value="add login url in settings" />
+    <MESSAGE value="show products as category" />
+    <MESSAGE value="add pagination for products" />
+    <option name="LAST_COMMIT_MESSAGE" value="add pagination for products" />
   </component>
 </project>
